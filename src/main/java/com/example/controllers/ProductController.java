@@ -48,7 +48,8 @@ public class ProductController {
 
   }
 
-  @PutMapping("/products/{id}")
+  @PutMapping(http:// localhost/8080/"/products/{id}")
+
   public ResponseEntity<Object> updateProduct(@PathVariable(value = "id") UUID id,
       @RequestBody @Valid ProductRecordDto productRecordDto) {
     Optional<ProductModel> product0 = productRepository.findById(id);
